@@ -4,10 +4,10 @@ function NavBar(){
   return(
     <React.Fragment>
       <ul className="nav-bar">
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Purchase Eggs</li>
-        <li>Goat Finder</li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Profile</a></li>
+        <li><a href="">Purchase Eggs</a></li>
+        <li><a href="">Goat Finder</a></li>
       </ul>
     </React.Fragment>
   );
