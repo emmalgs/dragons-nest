@@ -1,7 +1,10 @@
 # Dragons Nest
 ### A social media website for dragons. 
 
-### By Emma Gerigscott and Sarah Reimann
+### By Emma Gerigscott and Sarah Reimann  
+
+![webpage](./src/img/samplepage.png)
+
 
 ## Description
 
@@ -25,4 +28,8 @@ Using React, this website is a mockup of a dragon's social media homepage, showi
 
 ## Known Bugs
 * none, its perfect
+
+# License
+
+copyright (c) 2023 Ladies IT Department -- Emma Gerigscott and Sarah Reimann
 
