@@ -5,9 +5,18 @@ import PropTypes from 'prop-types';
 function ProfileInfo(props) {
   return (
     <React.Fragment>
-      <img src={props.userPic} alt="profile" className="mainProfPic"/>
-      <h4>{props.user}</h4>
-      <p>{props.bio}</p>      
+      <div className="profileGuys">
+        <img src={props.userPic} alt="profile" className="mainProfPic"/>
+        <div className="userBio">
+          <h4 className="username">{props.user}</h4>  
+          <p>{props.bio}</p>
+        </div>
+      </div>
+      <div className="profileNav">
+        <button>Posts</button>
+        <button>Followers</button>
+        <button>Following</button>
+    </div>        
     </React.Fragment>
   );
 }
