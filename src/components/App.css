@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Kanit:wght@200;400;700&display=swap');
+
+:root {
+  --dark: #202A25;
+  --purp: #86A5D9;
+  --cyan: #26F0F1;
+  --blue: #1F01B9;
+  --light: #C4EBC8;
+}
+
 .App {
   text-align: center;
 }
-
 
 
 @keyframes App-logo-spin {
@@ -12,7 +21,27 @@
     transform: rotate(360deg);
   }
 }
+body {
+  background-color: #c4ebc887;
+  font-family: "Kanit";
+}
 
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Caprasimo";
+  color: var(--blue);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  padding: 20px;
+  margin: 14px;
+  background-color: var(--purp);
+  border-radius: 20px;
+}
 
 .profPic,
 .mainProfPic {
@@ -21,6 +50,7 @@
   border-radius: 50%;
   padding: 10px;
   animation: App-logo-spin infinite 20s linear;
+  background: white;
 }
 
 .mainProfPic {
@@ -31,7 +61,10 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  background-color: lightpink;
+  background-color: var(--dark);
+  color: white;
+  border-radius: 20px;
+  margin: 10px;
   padding: 24px;
 }
 
@@ -39,14 +72,62 @@
   list-style: none;
 }
 
+.nav-bar li a {
+  text-decoration: none;
+  color: white;
+}
+
 .profile {
   grid-area: 1 / 1 / 12 / 3;
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
 }
 
-.main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
+.profileGuys {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
 }
+
+.username {
+  margin: 0 0 7px;
+}
+
+.profileBio {
+  margin: 6px;
+}
+
+.profileNav button {
+  margin: 4px;
+  margin-top: 8px;
+  border: none;
+  padding: 3px 10px;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 20px;
+}
+
+.newsfeed {
+  padding: 20px;
+  background: var(--cyan);
+  border-radius: 20px;
+}
+
+.post h4 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #a9cbad;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.post {
+  background-color: var(--light);
+  padding: 4px 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
