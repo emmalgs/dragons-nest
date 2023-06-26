@@ -10,12 +10,12 @@ const profilePosts = [
   },
   {
     profPic: ranger,
-    username: 'ranger_the_ranger',
+    username: 'granger_the_ranger',
     text: 'Getting a scale up!!'
   },
   {
     profPic: ranger,
-    username: 'ranger_the_ranger',
+    username: 'granger_the_ranger',
     text: 'Ready to lose that last 5 pounds?! I did in 5 minutes with HerbaLife!!!! Drink your way to the bottom of the scale!!!!'
   }
 ]
