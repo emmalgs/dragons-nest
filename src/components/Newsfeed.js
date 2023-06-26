@@ -3,6 +3,7 @@ import Post from './Post';
 import slinky from './../img/crazyeyes.gif';
 import pinky from './../img/ricky.gif';
 import horseMeat from './../img/horse-meat.gif';
+import grump from './../img/puff.gif';
 
 const mainNewsfeed = [
   {
@@ -19,19 +20,26 @@ const mainNewsfeed = [
     profPic: horseMeat,
     username: 'staleHoofFlesh98',
     text: 'I just want to frolic in the woods'
+  },
+  {
+    profPic: grump,
+    username: 'GrumpOnABump',
+    text: 'i hate it when imps take bites out of starbursts. that means they are rude'
   }
-]
+];
 
 function Newsfeed() {
   return (
-    <React.Fragment>
+    <div className="newsfeed">
+      <h3>Newsfeed</h3>
+      <hr />
       {mainNewsfeed.map((post, index) => 
         <Post profPic={post.profPic}
         username={post.username}
         text={post.text}
         key={index} />
         )}
-    </React.Fragment>
+    </div>
   );
 }
 
